@@ -26,12 +26,12 @@ namespace TrabajoEntornos
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
-            if (cbUrgente.Checked)
+            if (Urgente.Checked)
                 tipoTelegrama = 'u';
             //Obtengo el número de palabras que forma el telegrama
             numPalabras = textoTelegrama.Length;
             //Si el telegrama es ordinario
-            if (tipoTelegrama == 'o')
+            if (Ordinario.Checked)
                 if (numPalabras <= 10)
                     coste = 25;
                 else
